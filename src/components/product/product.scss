@@ -1,0 +1,70 @@
+.product{
+    margin-top: 90px;
+    &__lout{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        @media (max-width: 768px){
+            flex-direction: column;
+        }
+    }
+    &__card{
+        border-bottom: 1px solid #DADADA;
+        padding-bottom: 20px;
+        max-width: 620px;
+        @media (max-width: 1280px){
+            max-width: 492px;
+        }
+        @media (max-width: 1024px) {
+            max-width: 370px;
+          }
+          @media (max-width: 768px) {
+            max-width: 100%;
+          }
+        &_img{
+            img{
+                max-width: 620px;
+                @media (max-width: 1280px){
+                    max-width: 492px;
+                }
+                @media (max-width: 1024px) {
+                    max-width: 370px;
+                  }
+                  @media (max-width: 768px) {
+                    max-width: 100%;
+                  }
+            }
+        }
+        &_title{
+            font-family: permain;
+            font-size: 36px;
+            font-weight: 700;
+            margin: 40px 0 19px 0;
+            color:#3B3937 ;
+            @media (max-width: 768px){
+                font-size: 29px;
+            }
+            
+        }
+        &_subtitle{
+            font-family: gilroy400;
+            font-weight: 400;
+            font-size: 16px;
+            margin-bottom: 24px;
+            color:#3B3937 ;
+            @media (max-width: 768px){
+                font-size: 13px;
+            }       
+        }
+        &_link{
+            font-family: gilroy700;
+            font-weight: 700;
+            font-size: 15px;
+            color: #B14101;
+            text-align: right;
+            @media (max-width: 768px){
+                font-size: 13px;
+            }
+        }
+}
+}

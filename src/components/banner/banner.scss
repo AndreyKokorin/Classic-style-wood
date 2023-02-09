@@ -1,0 +1,74 @@
+.banner{
+    height: 700px;
+    background-image: url(../../static/promologo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 20px;
+    @media (max-width: 768px) {
+        margin: 8px;
+      }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__cikle{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 440px;
+        height: 440px;
+        background:  linear-gradient(0deg, rgba(198, 156, 109, 0.05), rgba(198, 156, 109, 0.05)), rgba(51, 51, 51, 0.5);
+        backdrop-filter: blur(3.5px);
+        border-radius: 240px;
+        @media (max-width: 768px) {
+            width: 330px;
+            height: 330px;
+          }
+    }
+    &__title{
+        font-family: permain;
+        font-weight: 700;
+        font-size: 36px;
+        color: #ffffff;
+        @media (max-width: 768px) {
+            font-size: 29px;
+          }
+    }
+    &__litTitle{
+        font-family: permain;
+        display: inline-block;
+        color: #FFD6A8;
+        font-size: 20px;
+        font-weight: 700;
+        @media (max-width: 768px) {
+            font-size: 18px;
+          }
+    }
+    &__sabtitle{
+        font-family: gilroy700;
+        font-size: 16px;
+        font-weight: 700;
+        margin-top: 15px;
+        color: #ffffff;
+        @media (max-width: 768px) {
+            font-size: 13px;
+          }
+    }
+    &__btn{
+        margin-top: 36px;
+        button{
+            width: 150px;
+            height: 50px;
+            background: #A9845C;
+            font-family: gilroy700;
+            font-size: 15px;
+            border: none;
+            color: #ffffff; 
+            text-transform: uppercase; 
+            cursor: pointer;
+            @media (max-width: 768px) {
+                font-size: 13px;
+              }
+         }
+    }
+}

@@ -1,0 +1,40 @@
+.footer{
+    padding: 80px 0 100px 0;
+    background-image: url(../../static/footerbg.png);
+    .wrapper{
+        display: flex; 
+        justify-content: space-between;
+        flex-wrap: wrap;
+        @media (max-width: 768px) {
+            flex-direction: column;
+          }
+    }
+    &__column{
+        &_num{
+            font-family: permain !important;
+            font-weight: 700 !important;
+            font-size: 25px !important;
+            line-height: 100% !important;
+            color: #FFFFFF !important;
+            opacity: 1 !important;
+        }
+    }
+    ul{
+        margin: 0;
+        padding: 0;
+        &:last-child{
+            margin: 0;
+        }
+    }
+    li{
+        list-style-type: none;
+        margin: 17px 0;
+        cursor: pointer;
+        font-family: gilroy400;
+        font-size: 13px;
+        font-weight: 400;
+        color: #FFFFFF;
+        opacity: 0.6;
+        line-height: 17px;
+    }
+}

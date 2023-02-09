@@ -1,0 +1,154 @@
+.header{
+    height: 120px;
+    background: #3B3937;
+    position: relative;
+    @media (max-width: 1024px){
+        height: 70px;
+    }
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        @media (max-width: 1024px) {
+            justify-content: space-between;
+          }
+    }
+    &__nav{
+        flex-grow: 1;
+        padding: 0 66px 0 134px;
+        @media (max-width: 1280px) {
+            padding: 0 30px;  
+        }
+        @media (max-width: 1024px) {
+            display: none;
+            width: 100vw;
+            height: 550px;
+            position: absolute;
+            left: 0;
+            padding: 0;
+            z-index: 10;
+            top: 70px;
+            background-color: #3B3937;
+          }
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &_media{
+            @media (max-width: 1024px) {
+               flex-direction: column;
+               align-items: center;
+               margin-top: 96px;
+              }
+            display: flex;
+            justify-content: space-between;
+            .mail{
+                font-family: gilroy400;
+                font-size: 16px;
+                color: #FFD6A8;
+                margin-right: 67px;
+                display: inline-block;
+                @media (max-width: 1024px){
+                    margin: 0;
+                    order: 2;
+                    margin-top: 15px;
+                }
+            }
+            .number{
+                font-family: permain;
+                font-size: 20px;
+                color: #FFD6A8;
+                font-weight: 700;
+                display: inline-block;
+                @media (max-width: 1024px){
+                    order: 1;
+                    font-size: 30px;
+                }
+            }
+        }
+        &_links{
+            li{
+                list-style-type: none;
+                display: inline-block;
+                padding-right: 36px;
+                color: #ffffff;
+                font-family: gilroy400;
+                font-size: 16px;
+                cursor: pointer;
+                transition-duration: 0.1s;
+                margin: 0;
+                text-align: center;
+                @media (max-width: 1024px) {
+                    display: block;
+                    margin: 36px 0;
+                    font-size: 24px;
+                }
+                @media (max-width: 1280px) {
+                    padding-right: 18px;  
+                }
+                &:hover{
+                    color:#FFD6A8;
+                }
+            }
+            ul{
+                margin: 0;
+                padding: 0;
+                @media (max-width: 1024px) {
+                    margin-top: 87px;
+                }
+                
+            }
+        }
+    }
+    &__btn{
+        button{
+            width: 120px;
+            height: 40px;
+            background: #A9845C;
+            font-family: gilroy700;
+            font-size: 13px;
+            color: #ffffff;
+            border:none;
+            font-weight: 700;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+    }
+    &__btntel{
+        display: none;
+        @media (max-width: 1024px) {
+            display: inline-block;
+            margin-right: 29px;
+          }
+    }
+    &__burger{
+        display: none;
+        @media (max-width: 1024px) {
+            display: inline-block;
+            .line1, .line2{
+                transition-duration: 0.3s;
+                width: 24px;
+                height: 2px;
+                background:#FFFFFF;
+            }
+            .line1{
+                margin-bottom: 6px;
+            }
+          }
+    }
+    &__telBtn{
+        display: flex;
+        align-items: center;
+    }
+}
+.dis-block{
+    display: block;
+}
+.openMenu{
+    .line1{
+        margin: 0;
+        transform: rotate(-45deg);
+    }
+    .line2{
+        transform: translateY(-2px) rotate(45deg) ;
+    }
+}

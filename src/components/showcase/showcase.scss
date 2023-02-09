@@ -1,0 +1,96 @@
+.showcase{
+    margin-top: 120px;
+    margin-bottom: 90px;
+    &__title{
+        font-family: permain;
+        font-weight: 700;
+        font-size: 64px;
+        color: #3B3937;
+    }
+    &__filter{
+        margin: 30px 0 40px 0;
+        overflow-x: auto;
+        .choosen{
+            border: 2px solid #3B3937;
+            font-family: gilroy700;
+        }
+        display: flex;
+        &_item{
+            padding: 20px 54px;
+            font-weight: 400;
+            font-family: gilroy400;
+            font-size: 15px;
+            text-transform: uppercase;
+            color: #3B3937;
+            border: 1px solid #DADADA;
+            transition-duration: 0.1s;
+            cursor: pointer;
+            white-space: nowrap;
+            @media (max-width: 1024px) {
+                padding: 9.5px 20px;
+              }
+        }
+    }
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 37px;
+        justify-content: center;
+    }
+    &__showall{
+        margin-top: 40px;
+            button{
+                width: 100%;
+                font-size: 15px;
+                font-family: gilroy700;
+                font-weight: 700;
+                background: none;
+                border: 1px solid rgba(68, 68, 68, 0.2);
+                height: 60px;
+                text-transform: uppercase;
+                @media (max-width: 1024px) {
+                    height: 50px;
+                }
+            }
+    }
+}
+
+.card{
+    width: 360px;
+    height: 360px;
+    border: 1px solid #DADADA;
+    padding: 20px;
+    position: relative;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    &:hover{
+        border: 1px solid #B1B0AF;
+    }
+    &__title{
+        font-family: gilroy500;
+        font-size: 18px;
+    }
+    &__price{
+        font-family: gilroy700;
+        font-size: 18px;
+        margin-top: 7px;
+    }
+
+    &__img{
+        text-align: center;
+        width: 100%;
+        margin-top: 33px;
+    }
+    &__salebtn{
+        position: absolute;
+        bottom: 16px;
+        right: 20px;
+            button{
+                font-family: gilroy700;
+                font-size: 15px;
+                color:#B14101;
+                border: none;
+                background: none;
+            }
+    }
+}
